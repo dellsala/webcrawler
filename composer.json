@@ -1,0 +1,8 @@
+{
+    "name": "ge/webcrawler",
+    "type": "project",
+    "require": {},
+	"autoload": {
+		"psr-4": {"Webcrawler\\": "src/Webcrawler"}
+	}
+}
