@@ -1,3 +1,4 @@
+#!/usr/bin/php
 <?php
 
 
@@ -11,4 +12,13 @@ $internet = new \Webcrawler\Internet\Internet(json_decode(file_get_contents($int
 $crawler = new \Webcrawler\Webcrawler\Crawler();
 $result = $crawler->crawl($internet);
 
-print_r($result);
+?>
+Success:
+<?php echo json_encode($result->success()); ?> 
+
+Success:
+<?php echo json_encode($result->skipped()); ?> 
+
+Success:
+<?php echo json_encode($result->error()); ?>
+
