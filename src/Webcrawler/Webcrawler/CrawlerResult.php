@@ -19,7 +19,7 @@ class CrawlerResult {
 	
 	public function skipped ()
 	{
-		return $this->skippped;
+		return $this->skipped;
 	}
 	
 	
